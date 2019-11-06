@@ -6,7 +6,6 @@ app.use(express.json());
 app.use(cors());
 
 app.post("/submit", (req, res) => {
-  console.log(req.body);
   if (req.body.credit.email === "direktor@sbarbank.ru") {
     return res.json({
       approved: true

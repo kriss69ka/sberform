@@ -7,7 +7,7 @@ export default class FullName extends React.Component {
     return (
       <>
         <div className="input">
-          <Field name={`${this.props.a}firstName`} validate={required}>
+          <Field name={`${this.props.fieldsName}firstName`} validate={required}>
             {({ input, meta }) => (
               <div>
                 <label>Ввеедите имя: </label>
@@ -19,7 +19,7 @@ export default class FullName extends React.Component {
         </div>
 
         <div className="input">
-          <Field name={`${this.props.a}lastName`} validate={required}>
+          <Field name={`${this.props.fieldsName}lastName`} validate={required}>
             {({ input, meta }) => (
               <div>
                 <label>Ввеедите фамилию: </label>
@@ -30,7 +30,7 @@ export default class FullName extends React.Component {
           </Field>
         </div>
         <div className="input">
-          <Field name={`${this.props.a}phone`} validate={required}>
+          <Field name={`${this.props.fieldsName}phone`} validate={required}>
             {({ input, meta }) => (
               <div>
                 <label>Ввеедите номер телефона: </label>

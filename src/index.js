@@ -78,7 +78,7 @@ class App extends React.Component {
                   values
                 }) => (
                   <form onSubmit={handleSubmit}>
-                    <Fullname a="main" />
+                    <Fullname fieldsName="main" />
 
                     <div className="input">
                       <Field
@@ -149,11 +149,6 @@ class App extends React.Component {
                         Reset
                       </button>
                     </div>
-                    {/* <Fields names={["firstName", "lastName", "employed", "notes"]}>
-            {fieldsState => (
-              <pre>{JSON.stringify(fieldsState, undefined, 2)}</pre>
-            )}
-          </Fields> */}
                   </form>
                 )}
               />{" "}
